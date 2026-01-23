@@ -1,22 +1,8 @@
-export default function Square() {
-  
+import Board from "./components/Board.jsx";
+
+export default function App() {
   return (
-    <>
-      <div>
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-      </div>
-      <div>
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-      </div>
-      <div>
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-        <button className="square">X</button>;
-      </div>
-    </>
+    <Board />
   )
 }
+
