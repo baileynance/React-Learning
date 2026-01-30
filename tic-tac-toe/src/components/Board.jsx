@@ -1,5 +1,6 @@
 import Square from "./Square.jsx";
 import { useState } from 'react';
+import calculateWinner from "../utilities/calculateWinner.jsx";
 
 export default function Board() {
   const [isXNext, setXNext] = useState(true);
@@ -7,7 +8,7 @@ export default function Board() {
 
   function handleClick(i) {
 
-    if (squares[i]) {
+    if (squares[i] || calculateWinner(squares)) {
       return;
     }
 
