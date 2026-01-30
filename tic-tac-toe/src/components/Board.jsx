@@ -7,24 +7,18 @@ export default function Board() {
   
   return (
     <>
-      <button className="bg-red-500 text-white p-4">
-      TEST
-      </button>
-      
-      <div className="board-row">
-        <Square value={squares[0]}/>
-        <Square value={squares[1]}/>
-        <Square value={squares[2]}/>
-      </div>
-      <div className="board-row">
-        <Square value={squares[4]}/>
-        <Square value={squares[5]}/>
-        <Square value={squares[3]}/>
-      </div>
-      <div className="board-row">
-        <Square value={squares[6]}/>
-        <Square value={squares[7]}/>
-        <Square value={squares[8]}/>
+      <div className="grid place-items-center min-h-screen">
+        <div className="grid grid-cols-3 gap-y-0">
+          <Square value={squares[0]}/>
+          <Square value={squares[1]}/>
+          <Square value={squares[2]}/>
+          <Square value={squares[4]}/>
+          <Square value={squares[5]}/>
+          <Square value={squares[3]}/>
+          <Square value={squares[6]}/>
+          <Square value={squares[7]}/>
+          <Square value={squares[8]}/>
+        </div>
       </div>
     </>
   )
