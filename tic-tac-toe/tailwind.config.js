@@ -4,10 +4,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  theme: { extend: {} },
+  plugins: [], // <-- must be an array
 };
-
-
