@@ -36,8 +36,8 @@ export default function Board() {
   
   return (
     <>
+      <div className="status">{status}</div>
       <div className="grid place-items-center min-h-screen">
-        <div className="status">{status}</div>
         <div className="grid grid-cols-3 gap-y-0">
           <Square value={squares[0]} onSquareClick={() => handleClick(0)}/>
           <Square value={squares[1]} onSquareClick={() => handleClick(1)}/>
